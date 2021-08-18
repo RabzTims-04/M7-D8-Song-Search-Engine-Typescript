@@ -1,0 +1,71 @@
+.mynav{
+    background-color: black;
+    min-height: 100vh;
+    
+}
+
+.sign{
+    background-color: white;
+    color: black;
+    border-color: white;
+    width:80%;
+}
+
+.sign:hover{
+    background-color: #B1B1B1;
+    color: black;
+    border-color: #B1B1B1;
+}
+
+.login{
+    background-color: black;
+    color: #B1B1B1;
+    border-color: #B1B1B1;
+    width:80%;
+}
+
+.login:hover{
+    background-color: #B1B1B1;
+    color: black;
+    border-color: #B1B1B1;
+}
+
+a{
+    color: #B1B1B1;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+svg{
+    color: #7a7a7a ;  
+}
+
+svg:hover{
+    color:white;
+}
+
+hr{
+    border-top: 1px solid #7a7a7a 
+}
+
+li:hover{
+    color: white;
+}
+
+.avatar-img{
+    width: 45px;
+}
+
+p{
+    color:white;
+}
+
+ .artist-bottom{
+    padding-top: 130%;
+}
+
+

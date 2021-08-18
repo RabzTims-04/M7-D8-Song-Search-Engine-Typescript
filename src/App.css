@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.footer{
+  background-color: #2c2c2c;
+  min-height: 13vh;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.play-pause-btn{
+  background-color: transparent;
+  border-color:transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.play-pause-btn:hover{
+  background-color: transparent;
+  border-color:transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.play-pause-btn:focus-visible{
+  background-color: transparent;
+  border-color:transparent;
+}
+
+.play-pause-btn:focus{
+  background-color: transparent;
+  border-color:transparent;
+}
+
+.play-pause-btn:active{
+  background-color: transparent;
+  border-color:transparent;
+}
+
+#player svg{
+  color: #7a7a7a;
+}
+
+#player svg:hover{
+  color: #ccc3c3;
+}
+
+#player i{
+  color: #7a7a7a;
+}
+
+#player i:hover{
+  color: #ccc3c3;
+}
+
+.pause{
+  visibility: hidden;  
+  position: absolute;
+  right: 50%;
+  transform: translateX(26px);
+}
+
+.playhr{
+  border-top: 2px solid #7a7a7a ;
+}
+
+.slider{
+  -webkit-appearance: none; 
+  margin-bottom: 1px; 
+  appearance: none;
+  height: 4px;
+  background: #d3d3d3; 
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+}
+
+input{
+  margin: 5px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  cursor: pointer; 
+}
+
+ .slider::-webkit-slider-thumb:hover {
+  width: 10px;
+  height: 10px;
+  background: #929191; 
+  cursor: pointer; 
+}
+
+#player img{
+  width: 15%;
+  height: 80%;
+}
+
+.footerp{
   color: white;
+  line-height: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+#seek-slider{
+  -webkit-appearance: none;  
+  appearance: none;
+  height: 3px;
+  background: #d3d3d3; 
+  outline: none; 
+  width: 70%;
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#seek-slider:hover {
+  opacity: 1;
+}
+
+#seek-slider::-webkit-slider-thumb {
+  
+  cursor: pointer; 
 }

@@ -1,0 +1,197 @@
+#contentArtist{
+    background-color: black;      
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: 0% 250%;
+    min-height: 100vh;
+  }
+  
+  #contentArtist::after{
+      content: ""; 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(180deg, rgba(82,81,81,0.4939017843465511) 6%, rgba(0,0,0,0.4939017843465511) 15%, rgba(42,39,39,0.6283555658591562) 25%, rgba(20,20,20,0.9420810560552346) 37%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 70%, rgba(0,0,0,1) 79%, rgba(0,0,0,1) 84%, rgba(0,0,0,1) 93%, rgba(0,0,0,1) 97%);
+  }
+  
+  #contentArtist #cardsDeck {
+      margin-bottom: 150px;
+  }
+  
+  #contentArtist p{
+      z-index: 10;
+      color: #a7a7a5;
+      font-size: small;
+  }
+  
+  #contentArtist h1{
+      z-index: 10;
+      color: white;
+      font-size:50px;
+  }
+  
+  #contentArtist .playbtn{  
+      letter-spacing: 0px;
+      padding: 0em 4em;
+      z-index: 1;  
+      margin: 5px; 
+      background-color:#1db954 ; 
+      border-color: #1db954;
+  }
+
+  #contentArtist .playbtn:focus-visible{  
+    letter-spacing: 0px;
+    padding: 0em 4em;
+    z-index: 1;  
+    margin: 5px; 
+    background-color:#1db954 ; 
+    border-color: #1db954;
+}
+  
+  #contentArtist .smallPlaybtn{  
+      letter-spacing: 0px;
+      padding: 0em 4em;
+      z-index: 100;  
+      margin: 5px; 
+      padding: 3% 0;  
+      background-color: #1db954; 
+      border-color: transparent;
+  }
+  
+  #contentArtist .smallPlaybtn:hover{  
+      background-color: #116b30d3; 
+  }
+  
+  
+  #contentArtist .playbtn:hover{  
+    background-color: transparent;  
+    border-color: grey; 
+  }
+  
+  #contentArtist .follow{ 
+      z-index: 1;  
+      letter-spacing: 0px;
+      padding: 0em 3em;
+      background-color: transparent; 
+      margin: 5px; 
+      width: 100%;  
+  }
+  
+  #contentArtist .smallfollow{
+      z-index: 5;  
+      letter-spacing: 0px;
+      padding: 0em 3em;
+      background-color: rgba(0,0,0,0.2);
+      margin: 5px; 
+     border-color: grey; 
+      padding: 3% 0; 
+  }
+  
+  #contentArtist .smallfollow:hover{
+      background-color: rgba(0,0,0,0.7); 
+  }
+  
+  #contentArtist .follow:hover{  
+      background-color: black   
+  }
+  
+  #contentArtist svg{ 
+      fill: white;  
+      width: 50px;
+      z-index: 2;
+  }
+  
+  #contentArtist svg:hover{ 
+      fill: rgb(202, 198, 198);   
+      width: 50px;
+  }
+  
+  #contentArtist li a{
+      color:rgb(202, 198, 198);
+      font-size: small;
+      position: relative;
+  }
+  
+  #contentArtist li a::after{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: #1db954;
+      color: transparent;
+      width: 0%;
+      content: "";
+      height: 3px;
+      transition: all 0.5s;    
+  }
+  
+  #contentArtist li a:hover::after{
+      width: 40%;
+  }
+  
+  #contentArtist li a:focus{
+      color:white;
+      border: none;
+  }
+  
+  #contentArtist li a:hover{
+      color:white;
+      border: none;
+  }
+  
+  #contentArtist .nav-tabs{
+      border: none;
+  }
+  
+  #contentArtist .nav-tabs .nav-item .active{
+      border: none;
+      background-color: transparent;
+  }
+  
+  #contentArtist h2{
+      z-index: 1;
+      color: white!important;
+      font-size:30px;
+  }
+  
+  #contentArtist .artistCards{
+      z-index: 10;
+  }
+  
+  #contentArtist .card{
+      z-index: 10;
+      background-color: black;
+      width: fit-content;
+      margin-right: 7px;
+      margin-left: 7px;
+      border-radius:none;
+      transform: translateX(0px);  
+      transition: 1s all;
+  }
+  
+  #contentArtist .card-body{
+      padding: 0.25rem;
+  }
+  
+  #contentArtist .card:hover{
+      background-color: rgb(27, 26, 26);
+      box-shadow: 2px 0 20px 2px rgba(20, 20, 20,0.5);
+      transform: scale(1.09);
+      z-index:2;
+  }
+  
+  #contentArtist .card:hover .card-play {
+      transform: scale(1);
+  }
+  
+  #contentArtist .row2{
+      padding-bottom: 100px;
+      margin-bottom: 500px;
+  }
+  
+  #deckHeader {
+      z-index: 1;
+  }
