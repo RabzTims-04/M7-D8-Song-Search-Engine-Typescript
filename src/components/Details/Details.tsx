@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button, Table } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import "./Details.css"
 import { Link } from "react-router-dom"
 import MyNav from '../MyNav/MyNav';
 import { RouteComponentProps } from "react-router-dom";
-import { IAlbum, IArtist } from "../../types/Details"
+import { IAlbum, IArtist, Track } from "../../types/Details"
 
 interface DetailsState{
     album:IAlbum
     artist:IArtist
-    preview:string
+    trackDetail:Track
     albumId:string
 }
 
@@ -22,7 +22,7 @@ class Details extends Component<RouteComponentProps<DetailsProps>, DetailsState>
     state:DetailsState={
         album:{} as IAlbum,
         artist:{} as IArtist,
-        preview:'',
+        trackDetail:{} as Track,
         albumId:this.props.match.params.id
     }
 
@@ -33,22 +33,18 @@ class Details extends Component<RouteComponentProps<DetailsProps>, DetailsState>
     fetchDetails = async() => {
         try {
             const response = await fetch(`${process.env.REACT_APP_URL}/track/${this.state.albumId}`)
-            console.log(this.state.albumId);
-            
-            const data = await response.json()
-            console.log("album",data);
-            const album = await data.album
-            const artist = await data.artist
-            const preview = await data.preview
+            console.log(this.state.albumId);            
+            const trackDetail = await response.json()
+            console.log("trackDetail",trackDetail);
+            const album = await trackDetail.album
+            const artist = await trackDetail.artist
             if(response.ok){
                 this.setState({
                     album,
                     artist,
-                    preview 
+                    trackDetail 
                 })
-            }
-            console.log("artists",artist);
-            console.log(preview);
+            } 
         } catch (error) {
             console.log(error);
         }
@@ -88,7 +84,7 @@ class Details extends Component<RouteComponentProps<DetailsProps>, DetailsState>
                                     PLAY
                                  </Button>                                   
                                 </div>
-                                <p className="small text-center">{this.state.album?.releaseDate} . {/* {this.state.album?.nb_tracks} */} SONGS</p>
+                                <p className="small text-center">{this.state.album?.release_date} . {/* {this.state.album?.nb_tracks} */} SONGS</p>
                                 <div className="text-center">
                                   
                                  </div>

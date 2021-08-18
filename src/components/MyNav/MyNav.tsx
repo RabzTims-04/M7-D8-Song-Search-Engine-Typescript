@@ -9,7 +9,6 @@ interface HomeState {
   search: string;
   mouseOver: boolean;
   searchLength: number;
-  // songs: ISong[]
   isLoading: boolean;
 }
 
@@ -22,7 +21,6 @@ class MyNav extends Component<HomeProps, HomeState> {
     search: "",
     mouseOver: false,
     searchLength: 0,
-    // songs:[],
     isLoading: false,
   };
 
