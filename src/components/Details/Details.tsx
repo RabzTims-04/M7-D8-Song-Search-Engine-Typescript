@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import MyNav from '../MyNav/MyNav';
 import { RouteComponentProps } from "react-router-dom";
 import { IAlbum, IArtist, Track } from "../../types/Details"
+import Footer from '../Footer/Footer';
 
 interface DetailsState{
     album:IAlbum
@@ -56,6 +57,7 @@ class Details extends Component<RouteComponentProps<DetailsProps>, DetailsState>
 
     render() {
         return (
+            <>
             <Container fluid>
             <Row>
                 <Col md={2} className="mynav d-flex flex-column">
@@ -133,6 +135,8 @@ class Details extends Component<RouteComponentProps<DetailsProps>, DetailsState>
             </Row>
 
         </Container>
+        <Footer currentSong={this.state.trackDetail}/>
+        </>
         );
     }
 }
